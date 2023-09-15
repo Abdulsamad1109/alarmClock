@@ -74,7 +74,7 @@ alarm = () => {
     
 
     if ( selectedHrsVal == adjustedHours && selectedHrsVal != "" && selectedMinVal== adjustedMinutes && selectedMinVal != "" && adjustedSeconds =="00" && selectedMeriVal == adjMeri) {
-        myAudio = new Audio("Alarm sound 1.wav");
+        myAudio = new Audio("https://cdn.trendybeatz.com/audio/Seyi-Vibez-Ft-Zlatan-Professor-Peller-(TrendyBeatz.com).mp3");
         myAudio.play();
         btn.style.color = "orangered"
         btn.innerText = "Stop Alarm"
