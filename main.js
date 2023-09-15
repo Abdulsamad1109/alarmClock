@@ -56,9 +56,9 @@ alarm = () => {
     dHrs == 19 ? adjustedHours = "0" + 7 :7
     dHrs == 20 ? adjustedHours = "0" + 8 :8
     dHrs == 21 ? adjustedHours = "0" + 9 :9
-    dHrs == 22 ? adjustedHours = "0" + 10 :10
-    dHrs == 23 ? adjustedHours = "0" + 11 :11
-    dHrs == 24 ? adjustedHours = "0" + 12 :12   
+    dHrs == 22 ? adjustedHours = 10 :10
+    dHrs == 23 ? adjustedHours = 11 :11
+    dHrs == 24 ? adjustedHours = 12 :12   
 
     
 
