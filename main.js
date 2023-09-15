@@ -23,11 +23,10 @@ let adjMeri
     selectedMinVal = mySelectMin.value
     selectedMeriVal = mySelectMeri.value
     btn.style.color = "grey"
-    // event.target.innerText = "Stop Alarm"
    }
    else if(event.target.innerText === "Stop Alarm"){
     myAudio.pause()
-    // event.target.innerText = "Set Alarm"
+    myAudio.currentTime = 0;
     btn.style.color = "grey"
     alert("Pls refresh your browser to reset Alarm")
    }
@@ -75,7 +74,7 @@ alarm = () => {
     
 
     if ( selectedHrsVal == adjustedHours && selectedHrsVal != "" && selectedMinVal== adjustedMinutes && selectedMinVal != "" && adjustedSeconds =="00" && selectedMeriVal == adjMeri) {
-        myAudio = new Audio("Anabella.mp3");
+        myAudio = new Audio("Alarm sound 1.wav");
         myAudio.play();
         btn.style.color = "orangered"
         btn.innerText = "Stop Alarm"
